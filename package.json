@@ -1,0 +1,17 @@
+{
+  "name": "stock-price-fetcher",
+  "version": "1.0.4",
+  "description": "Fetches currency and value of a stock real time provided yahoo finance representation on stock ticker.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "stock",
+    "price",
+    "realtime",
+    "yahoo-finance"
+  ],
+  "author": "Kovvuri Sai Gopal Reddy",
+  "license": "MIT"
+}
