@@ -8,11 +8,12 @@ const data = async function (ticker) {
                 });
                 // console.log(response);
                 const body = (await response.text())
-                let price = body.split(`"${ticker}":{"sourceInterval"`)[1]
-                    .split('regularMarketPrice')[1]
-                    .split('fmt":"')[1]
-                    .split('"')[0];
+//                 let price = body.split(`"${ticker}":{"sourceInterval"`)[1]
+//                     .split('regularMarketPrice')[1]
+//                     .split('fmt":"')[1]
+//                     .split('"')[0];
 
+                let price = body.split(`"${ticker}"`)[3].split("value=")[1].split('"')[1];
                 price = parseFloat(price.replace(',', ''));
 
                 const currencyMatch = body.match(/Currency in ([A-Za-z]{3})/);
